@@ -1,0 +1,62 @@
+.form-control::placeholder {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: gainsboro;
+    font-size: 0.8em;
+}
+
+.tt {
+    box-shadow: 0 -1px 0px rgb(0 0 0 / 25%), 0 3px 4px rgb(0 0 0 / 51%);
+    font-size: 23px;
+}
+
+hr {
+    margin: 1rem 0;
+    border: 0.5px solid #2663ec;
+}
+
+.box {
+    background: "1f1f42";
+    border-radius: 10%;
+    transition: all 650ms ease;
+    border: 1px solid;
+    box-shadow: 0 -1px 0px rgb(0 0 0 / 25%), 0 3px 4px rgb(0 0 0 / 51%);
+}
+
+.box embed {
+    border-radius: 25px;
+}
+
+.yt {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid;
+}
+
+#become-driver-body>div {
+    background: #08061b;
+}
+
+#become-driver-body .container {
+    position: relative;
+    top: -4em;
+    margin-top: 4em;
+}
+
+.buttons {
+    border: 2px solid #4abcfc;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .form-control::placeholder {
+        color: gainsboro;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}

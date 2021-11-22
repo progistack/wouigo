@@ -1,0 +1,29 @@
+footer>div {
+  border-top: 1px solid #D3E6FB;
+  margin-top: 2em;
+}
+
+footer .input-group {
+  border-radius: 4em;
+  padding: 1px;
+  overflow: hidden;
+  border: 1px solid #ABABAB;
+}
+
+footer .input-group input {
+  border: 0;
+}
+
+footer .input-group button {
+  border-radius: 4em !important;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}

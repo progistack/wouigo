@@ -1,0 +1,155 @@
+header {
+  background-color: white;
+}
+
+.cst-full-h {
+  height: 100vh;
+}
+
+.header-navbar {
+  z-index: 1;
+}
+
+#create-account {
+  background-color: #38B6FF;
+  border-radius: 2em;
+}
+
+header .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #38B6FF !important;
+}
+
+#create-account a {
+  color: white !important;
+}
+
+/* .nav-item:hover {
+  color: red;
+  background-color: #38b6ff
+} */
+
+/* banniere */
+.home-banner {
+  background: url(https://static.lpnt.fr/images/2020/09/12/20729794lpw-20729998-article-lamborghini-jpg_7343426_660x281.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.home-banner .banner-content {
+  z-index: 1;
+  background-image: linear-gradient(to right, rgba(10, 10, 10, 1), rgba(255, 0, 0, 0));
+}
+
+.sign-banner .banner-content {
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(10, 10, 10, 1), rgba(255, 0, 0, 0));
+}
+
+.banner-content h3 {
+  font-size: 1.7rem;
+  font-family: SegoeUI-Semibold, "Segoe UI";
+  font-weight: 600;
+  color: white;
+}
+
+.banner-content p {
+  font-family: SegoeUI, "Segoe UI";
+  color: white;
+  font-size: 13px;
+}
+
+.navbar-toggler {
+  height: fit-content;
+}
+
+.btn-style {
+  width: fit-content;
+  border-radius: 5rem;
+  font-size: 14px;
+  min-width: fit-content;
+}
+
+.custom-bg-skyblue {
+  background-color: rgb(56, 182, 255);
+  color: white;
+}
+
+.custom-bg-white {
+  color: rgb(56, 182, 255);
+  background-color: white;
+}
+
+.banner .bules {
+  position: absolute;
+  top: 0;
+}
+
+.banner .bules>div {
+  display: inline-block;
+  border-radius: 50%;
+  position: inherit;
+}
+
+.banner .bules>div:first-child {
+  width: 25em;
+  height: 25em;
+  background-color: rgb(195, 39, 232);
+  left: -12px;
+  top: -2em;
+}
+
+.banner .bules>div:nth-child(2) {
+  width: 10em;
+  height: 10em;
+  background-color: rgb(165, 210, 255);
+  opacity: 0.59;
+  left: 12.7em;
+  top: 0.5em;
+}
+
+.banner .bules>div:nth-child(3) {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(165, 210, 255);
+  opacity: 0.36;
+  top: 14em;
+  left: 16em;
+}
+
+.banner .bules>div:nth-child(4) {
+  width: 25em;
+  height: 25em;
+  background-color: rgb(165, 210, 255);
+  opacity: 0.73;
+  left: 21.8em;
+  top: -5em;
+}
+
+.banner-content p {
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .banner-content p {
+    font-size: 20px;
+  }
+
+  .banner-content h3 {
+    font-size: 3rem;
+  }
+
+  .btn-style {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}

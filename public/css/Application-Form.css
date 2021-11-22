@@ -1,0 +1,40 @@
+
+#become-driver-body #upload {
+  opacity: 0;
+}
+
+#become-driver-body #upload-label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+#become-driver-body .image-area {
+  border: 2px dashed rgba(54,1,80,0.7);
+  padding: 1rem;
+  position: relative;
+}
+
+#become-driver-body .image-area::before {
+  content: 'Uploaded image result';
+  color: #46015e;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+#become-driver-body .image-area img {
+  z-index: 2;
+  position: relative;
+}
+
+#become-driver-body input[type=number] {
+  -moz-appearance: textfield;
+}
+

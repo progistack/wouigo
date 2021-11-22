@@ -1,0 +1,283 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Devenir chauffeur
+	{{ parent()}}
+{% endblock %}
+
+{% block body %}
+	<div
+		class="cst-full-h">
+		<!-- banner -->
+		<section class="h-100 d-flex banner sign-banner">
+			<div class="h-100 px-5 d-flex align-items-center banner-content">
+				<div class="col-md-8 px-md-5">
+					<h3 class="">Rejoignez notre team Driver.</h3>
+					<p class="ps-md9 my-4">
+						Vous avez le permis de conduire, de l'expérience et êtes de bonne moralité ? Tentez votre chance
+						                    avec nous ou nos partenaires!
+					</p>
+					<div class="d-md-flex align-items-center">
+						<a id="become-driver-form" class="col-8 col-sm-4 py-2 py-md-3 px-4 btn btn-style custom-bg-skyblue" href="#become-driver-body">
+							<i class="fad fa-chevron-double-down"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+    <section id="become-driver-body">
+        <h1 class="text-center text-capitalize pt-5 cst-txt-lightblue">Constituez votre dossier de candidature</h1>
+        <p class="pt-2 pb-5  text-center cst-txt-lightgray cst-fw-500 col-12 col-md-5 m-auto">Renseignez en quelques minutes le
+            formulaire
+            ci-dessous pour
+            soumettre votre
+            dossier.</p>
+        <div>
+            <div class="container shadow-lg p-3 bg-body rounded">
+                <p class="d-none d-md-block fs-1 cst-txt-v-lightgray cst-fw-500 text-center">Formulaire de candidature</p>
+                <form id="signin-form" action="index.php?action=addRegistration" method="post">
+                    <div class="infoPreso">
+                        <p class="fs-7 pt-1 pt-md-4 cst-fw-500 cst-txt-gray">Informations personnelles</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <div class="row inscript">
+                                    <div class="col-12">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required="" name="nom"
+                                            placeholder="Nom">
+                                    </div>
+                                </div>
+
+                                <div class="row inscript">
+                                    <div class="col-12">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required="" name="prenom"
+                                            placeholder="Prénom (2 maximum)">
+                                    </div>
+                                </div>
+
+                                <div class="row inscript">
+                                    <div class="col-6">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="date" required=""
+                                            name="datenaiss" placeholder="Date de naissance ">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                            name="nationalite" placeholder="Nationalité">
+                                    </div>
+                                </div>
+
+                                <div class="row inscript">
+                                    <div class="col-6">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required="" name="ville"
+                                            placeholder="Ville de résidence ">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required="" name="quartier"
+                                            placeholder="Quartier">
+                                    </div>
+                                </div>
+
+                                <div class="row inscript">
+                                    <div class="col-6">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                            name="telephone1" placeholder="Téléphone 1">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                            name="telephone2" placeholder="Téléphone 2">
+                                    </div>
+                                </div>
+
+                                <div class="row inscript">
+                                    <div class="col-12">
+                                        <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required="" name="adresse"
+                                            placeholder="Adresse (indiquez où se situe votre maison)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="12 col-md-6 d-flex align-items-center flex-column">
+                                <input type="file" ccept="image/*" id="imgInp">
+                                <img id="profile-img" class="w-75"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <hr />
+                    </div>
+
+                    <div class="row">
+                        <div class="infoPro">
+                            <p class="fs-7 pt-4 cst-fw-500 cst-txt-gray">Informations professionnelles</p>
+                            <div class="row">
+                                <div class="12 col-md-6">
+                                    <div class="row inscript">
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="numPermis" placeholder="Numéro du permis">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="date" required=""
+                                                name="nationlitePremis" placeholder="Nationalité">
+                                        </div>
+                                    </div>
+
+                                    <div class="row inscript">
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="catpermis" placeholder="Catégorie du permis">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="anneExperiance" placeholder="Année d'expériences">
+                                        </div>
+                                    </div>
+
+                                    <div class="row inscript">
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="typeVehicule" placeholder="Type de véhicule habituellement conduit">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="autres" placeholder="Autres (2 maximum)">
+                                        </div>
+                                    </div>
+
+                                    <div class="row inscript">
+                                        <div class="col-12">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="conditionVolant" placeholder="A quand votre dernière fois au volant?">
+                                        </div>
+                                    </div>
+
+                                    <div class="row inscript">
+                                        <div class="col-12">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="conditionVitesse"
+                                                placeholder="Quel boîte à vitesse vous convient le mieux?">
+                                        </div>
+                                    </div>
+
+                                    <div class="row inscript">
+                                        <div class="col-12">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="conditionConduit"
+                                                placeholder="Avez-vous déjà conduit un véhicule de luxe?">
+                                        </div>
+                                    </div>
+
+                                    <div class="row inscript">
+                                        <div class="col-12">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="conditionChauffeur" placeholder="Avez-vous déjà exercé comme chauffeur au sein
+                                            d'une entreprise?">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="12 col-md-6">
+                                    <div class="containers">
+                                        <div id="pdf-box" style="width:inherit !important; overflow-y: overlay;">
+                                            <input type="file" id="myPdf" /><br>
+                                            <canvas id="pdfViewer" style="width:100% !important"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <hr />
+                    </div>
+
+                    <div class="row">
+                        <div class="otherInfo">
+                            <p class="fs-7 pt-4 cst-fw-500 cst-txt-gray">Autres informations</p>
+                            <div class="row">
+                                <div class="form-group">
+
+                                    <div class="row inscript">
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="catpermis" placeholder="QDisposez-vous d'un moyen de déplacement?">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="anneExperiance" placeholder="Quelles est votre disponibilité horaire?">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="catpermis" placeholder="Aimeriez-vous travailler à temps partiel?">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="anneExperiance" placeholder="Quels langues parlez-vous?">
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input class="form-control cst-txt-gray border border-3 mb-2" type="text" required=""
+                                                name="typeVehicule" placeholder="Prêt à commencer tout de suite?">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <hr />
+                    </div>
+
+                    <div>
+                        <div>
+                            <p class="py-4 text-center cst-txt-lightgray cst-fw-500 col-11 col-md-5 m-auto">Si vous rencontrez des difficultés lors du remplissage, appelez le 00229 00 000
+                                000.</p>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-6">
+                            <div class="justify-content-center d-flex form-group mb-3">
+                                <div id="submit-btn">
+                                    <div class="row">
+                                        <a class="nav-link cst-btn-white" href="/" style="">Annuler</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="justify-content-center d-flex form-group mb-3">
+                                <div id="submit-btn">
+                                    <button role="button" form="signin-form" type="submit" value="Submit" href="#" class="btn nav-link cst-btn-blue text-white">Soumettre</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col">
+            <h3 id="fail" class="text-center text-danger d-none"><br>Form not Submitted&nbsp;<a href="contact.html">Try
+                    Again</a><br><br></h3>
+            <h3 id="success-1" class="text-center text-success d-none"><br>Form Submitted Successfully&nbsp;<a
+                    href="contact.html">Send Another Response</a><br><br></h3>
+        </div>
+    </section>
+
+{% endblock %}
